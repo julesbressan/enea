@@ -5,6 +5,7 @@ from functools import reduce
 import re
 import matplotlib.pyplot as plt 
 from config import CFG
+import seaborn as sns 
 #%%
 from accident import ACCIDENT_DATA
 from accident_location import ACCIDENT_LOCATION_DATA
@@ -45,10 +46,10 @@ df_merged_all_data_replaced = df_merged_all_data
 
 column_types = df_merged_all_data_replaced.dtypes.astype(str).to_dict()
 unknown_codes = {'SEX': 'U',
- 'AGE': '999',
+ 'Age Group': 'unknown',
  'SEATING_POSITION': 'NK',
  'Road User Type Desc': 'Not known',
- 'Driver Age': '999',
+ 'Driver Age Group': 'unknown',
  'Driver sex': 'U',
  'Road Surface Type Desc': 'Unknown',
  'VEHICLE_BODY_STYLE': 'Unknown',
@@ -56,7 +57,7 @@ unknown_codes = {'SEX': 'U',
  'INJ_LEVEL':'999',
  'VEHICLE_POWER': '999',
  'Vehicle Type Desc': 'Unknown',
- 'TARE_WEIGHT': '999',
+ 'TARE_WEIGHT': '0',
  'LEVEL_OF_DAMAGE': '999',
  'Accident Type Desc': 'Unknown',
  'Day Week Description': 'Unknown',

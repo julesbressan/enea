@@ -1,10 +1,8 @@
 #%%
-from config import CFG
 import pandas as pd
 from datetime import datetime
 import calendar
 from config import *
-
 #%%
 print("Importing accident raw data...")
 raw_df_accident = pd.read_csv(CFG.data_rootfolder / "ACCIDENT.CSV")
@@ -13,7 +11,7 @@ df_accident = raw_df_accident
 #%%
 #Let's check granularity 
 duplicates = raw_df_accident["ACCIDENT_NO"].duplicated(keep=False)
-# print(duplicates.sum())
+#print(duplicates.sum())
 #We deduce that granularity is ACCIDENT_NO
 granularity=["ACCIDENT_NO"]
 #%%

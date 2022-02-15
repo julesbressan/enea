@@ -12,7 +12,7 @@ accident : ok => granularity= accident
 subdca : ok => in the end not used because describes the serie of events after the accident
 person : ok 
 location : ok
-vehicle : ok
+vehicle : ok => we simplified categories 
 
 for person data : we don't need as much detail. But we would like to see if the age of the driver has an impact on the severity. 
 (it could be interesting to see the impact of the seatbelt, but we don't have that data avaliable)
