@@ -11,7 +11,10 @@ The goal here is to identify leverages of action to prevent severe accidents to 
 2. run generate_preprocessed_data.py to generate processed data 
 3. 2 files are then using that data to make some analysis : 
 feature_selection.py and hot_spots.ipynb
-feature_selection.py reveals how we selected 
+
+- feature_selection.py reveals how the most correlated features to injury levels were selected
+- hot_spots.ipynb reveals how spatial distribution of accidents can be analysed with a density approach
+
 
 NOTE: The rest of files are notebooks only used for a better representation of what we are talking about. They can be considered as exploratory drafts 
  
