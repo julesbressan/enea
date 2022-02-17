@@ -1,4 +1,5 @@
 # %%
+from tkinter import Y
 from matplotlib import pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -83,7 +84,7 @@ scores = scores.sort_values("score", ascending=False)
 threshold_selection = 0.01
 #%%
 # plot the scores
-plt.figure(figsize=(40, 10), dpi=1100)
+plt.figure(figsize=(40, 10), dpi=1000)
 plt.bar("features", "score", data=scores)
 
 plt.axhline(
@@ -93,6 +94,7 @@ plt.xticks(rotation=90)
 plt.title(
     "Feature selection : mutual info classification score", loc="left", fontsize=30
 )
+
 plt.show()
 
 #%%
@@ -123,7 +125,11 @@ selected_features_data = encoded_df[kept_columns + [TARGET]]
 X_reduced, y_reduced = split_input_tragets(selected_features_data)
 
 X_reduced_train, X_reduced_test, y_train, y_test = train_test_split(
-    X_reduced, y_reduced, test_size=0.3, random_state=4
+    X_reduced,
+    y_reduced,
+    test_size=0.3,
+    random_state=4,
+    stratify="yes",  # we have unbalanced targets
 )
 
 

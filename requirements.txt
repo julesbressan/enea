@@ -20,7 +20,7 @@ fonttools==4.29.1
 geographiclib==1.52
 geopandas==0.10.2
 geopy==2.2.0
-ipykernel @ file:///Users/runner/miniforge3/conda-bld/ipykernel_1644262773222/work/dist/ipykernel-6.9.0-py3-none-any.whl
+ipykernel==6.9.1
 ipython @ file:///Users/runner/miniforge3/conda-bld/ipython_1642613665134/work
 ipython-genutils==0.2.0
 jedi @ file:///Users/runner/miniforge3/conda-bld/jedi_1637175406194/work
