@@ -10,7 +10,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score, recall_score
 
-
+#For this task some specific operations have to be done on the processed data 
 # %%
 data = pd.read_csv(
     "/Users/julesbressan/Documents/GitHub/Enea_Task/processed_data.csv",
@@ -23,7 +23,9 @@ ORDINAL_FEATURRES = ["AGE", TARGET, "SPEED_ZONE", "TARE_WEIGHT"]
 CATEGORICAL_FEATURES = [
     column for column in data.columns if column not in ORDINAL_FEATURRES
 ]
-data.loc[:, TARGET] = data[TARGET].apply(lambda x: 1 - int(x > 2.5))
+#Binarizing labels. Might have to come back later on that point. (Could have been done during preprocessing...)
+data.loc[:, TARGET] = data[TARGET].apply(lambda x: 1 - int(x > 2.5)) 
+
 # %%
 def set_dtypes(data: pd.DataFrame) -> pd.DataFrame:
     dtypes = {}
@@ -69,7 +71,7 @@ def prepare_data(data: pd.DataFrame) -> tuple:
 
     return X, y, encoded_df
 
-
+#Let's get the most relevant features
 # %%
 X, y, encoded_df = prepare_data(data)
 
