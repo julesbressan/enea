@@ -1,5 +1,4 @@
 # Enea_Task
- enea_task
 We are working on data about accidents in the victorian state from year 1987 to 2013 (Australia)
 The goal here is to identify leverages of action to prevent severe accidents to occue by :
 - Understanding the spatial distribution of accidents
