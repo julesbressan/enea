@@ -1,0 +1,49 @@
+{
+    "PERSON.csv": [
+        "ACCIDENT_NO",
+        "PERSON_ID",
+        "VEHICLE_ID",
+        "SEX",
+        "AGE",
+        "INJ_LEVEL",
+        "Road User Type Desc",
+        "SEATING_POSITION", 
+        "HELMET_BELT_WORN"
+    ],
+    "VEHICLE.csv": [
+        "ACCIDENT_NO",
+        "VEHICLE_ID",
+        "Road Surface Type Desc",
+        "VEHICLE_POWER",
+        "Vehicle Type Desc",
+        "TARE_WEIGHT"
+    ],
+    "ACCIDENT_LOCATION.csv": [
+        "ACCIDENT_NO",
+        "ROAD_TYPE"
+    ],
+    "ACCIDENT.csv": [
+        "ACCIDENT_NO",
+        "Accident Type Desc",
+        "ACCIDENTDATE",
+        "ACCIDENTTIME",
+        "Day Week Description",
+        "Light Condition Desc",
+        "Road Geometry Desc",
+        "SPEED_ZONE"
+    ],
+    "ATMOSPHERIC_COND.csv": [
+        "ACCIDENT_NO",
+        "Atmosph Cond Desc"
+    ],
+    "NODE.csv": [
+        "ACCIDENT_NO",
+        "LGA_NAME",
+        "Lat",
+        "Long"
+    ],
+    "ROAD_SURFACE_COND.csv": [
+        "ACCIDENT_NO",
+        "Surface Cond Desc"
+    ]
+}

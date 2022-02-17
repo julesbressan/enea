@@ -1,0 +1,26 @@
+{
+    "ACCIDENT_LOCATION.csv": [
+        "ACCIDENT_NO"
+    ],
+    "ACCIDENT.csv": [
+        "ACCIDENT_NO"
+    ],
+    "ATMOSPHERIC_COND.csv": [
+        "ACCIDENT_NO"
+    ],
+    "NODE.csv": [
+        "ACCIDENT_NO"
+    ],
+    "PERSON.csv": [
+        "ACCIDENT_NO",
+        "VEHICLE_ID",
+        "PERSON_ID"
+    ],
+    "ROAD_SURFACE_COND.csv": [
+        "ACCIDENT_NO"
+    ],
+    "VEHICLE.csv": [
+        "ACCIDENT_NO",
+        "VEHICLE_ID"
+    ]
+}
